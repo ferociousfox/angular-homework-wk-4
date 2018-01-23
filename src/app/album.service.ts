@@ -11,22 +11,12 @@ export class AlbumService {
     return ALBUMS;
   }
 
-  // getAlbumById(albumId: number) {
-  //   ALBUMS.forEach(function(album) {
-  //     console.log(album.id);
-  //     if (album.id === albumId) {
-  //       console.log(album);
-  //       return album;
-  //     }
-  //   })
-  // }
-  //
-  getAlbumById(albumId: number){
-    for (var i = 0; i < ALBUMS.length; i++) {
-      if (ALBUMS[i].id === albumId) {
-        return ALBUMS[i];
+  getAlbumById(albumId: number) {
+    for(let album of ALBUMS) {
+      if (album.id === albumId) {
+        console.log(album);
+        return album;
       }
     }
   }
-
 }

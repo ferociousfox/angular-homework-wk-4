@@ -25,6 +25,7 @@ export class AlbumDetailComponent implements OnInit {
       this.albumId = parseInt(urlParameters['id']);
     });
     this.albumToDisplay = this.albumService.getAlbumById(this.albumId);
+    // console.log(this.albumService.getAlbumById(this.albumId));
   }
 
 }
