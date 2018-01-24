@@ -1,5 +1,5 @@
 <div>
-  <h3>{{albumToDisplay.title}}</h3>
-  <h4>{{albumToDisplay.artist}}</h4>
-  <p>{{albumToDisplay.description}}</p>
+  <h3>{{(albumToDisplay.title | async)?.title}}</h3>
+  <h4>{{(albumToDisplay.artist | async)?.artist}}</h4>
+  <p>{{(albumToDisplay.description | async)?.description}}</p>
 </div>
